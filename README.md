@@ -2,10 +2,13 @@ PusherAS
 ========
 
 Pusher.com ActionScript3 Client Library using the native AS3 event system.
-
+Developed for real-time Mobile, Desktop, Browser applications.
 
 ###Example Script Demo:
 ![alt tag](http://rocketengine.io/download/pusheras_ex_demo.gif)
+
+**Live Demo:** http://rocketengine.io/demos/pusheras
+*Note: The demo is running on a free pusher account, in some cases the rate limit or the maximum connection count is reached. Open the browser console to inspect the logfile.*
 
 ###Usage:
 To define the pusher connection, create a new ```PusherOptions``` instance.
