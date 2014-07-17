@@ -48,14 +48,15 @@ protected function pusher_WS_DISCONNECTED(event:PusherConnectionStatusEvent):voi
     logger.error("Disconnected! " + JSON.stringify(event.data));
 }
 ```
-PusherConnectionStatusEvent.WS_FAILED will be dispatched if the socket failes for some reason. (IOError, SecurityError) 
+PusherConnectionStatusEvent.WS_FAILED will be dispatched if the socket failes for some reason.
+(IOError, SecurityError) 
 ```javascript
 protected function pusher_WS_FAILED(event:PusherConnectionStatusEvent):void
 {
     logger.error("Connection Failed! " + JSON.stringify(event.data));
 }
 ```
-PusherConnectionStatusEvent.WS_INTERRUPTED will be dispatched if the socket detected a interrupt change based on ping pong timeouts. Define this timeout with ```interruptTimeout```. ```event.data.interrupted``` is true if the connections is interrupted and is false if the intteruption is over.
+PusherConnectionStatusEvent.WS_INTERRUPTED will be dispatched if the socket detected a interrupt change based on ping pong timeouts. Define this timeout with ```interruptTimeout```. ```event.data.interrupted``` is true if the connections is interrupted and false if the interruption is over.
 ```javascript
 protected function pusher_WS_INTERRUPTED(event:PusherConnectionStatusEvent):void
 {
@@ -79,7 +80,8 @@ protected function testChannel_MY_EVENT(event:PusherEvent):void
 }
 ```	
 
-For a detailed example please checkout: https://github.com/rocketengineio/PusherAS/tree/master/flash-src/PusherASExample/src
+For a detailed example please checkout:
+https://github.com/rocketengineio/PusherAS/tree/master/flash-src/PusherASExample/src
 
 Documents
 -------
