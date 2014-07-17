@@ -4,6 +4,8 @@ PusherAS
 Pusher.com ActionScript3 Client Library using the native AS3 event system.
 Developed for real-time Mobile, Desktop, Browser applications.
 
+Listed on pusher.com: http://pusher.com/docs/libraries#community-actionscript
+
 ###Example Script Demo:
 ![alt tag](http://rocketengine.io/download/pusheras_ex_demo.gif)
 
