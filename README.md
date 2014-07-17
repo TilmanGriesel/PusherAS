@@ -81,6 +81,7 @@ protected function testChannel_MY_EVENT(event:PusherEvent):void
 ```	
 
 For a detailed example please checkout:
+
 https://github.com/rocketengineio/PusherAS/tree/master/flash-src/PusherASExample/src
 
 Documents
