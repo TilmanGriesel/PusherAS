@@ -289,7 +289,11 @@ package io.rocketengine.pusheras
 			// create new pusher event
 			var pusherEvent:PusherEvent = new PusherEvent(PusherEvent.SUBSCRIBE);
 			pusherEvent.data.channel = pusherChannel.name;
-			pusherEvent.data.auth = _pusherOptions.applicationKey + ':' + pusherChannel.authenticationSignature;
+			if (pusherChannel.authenticationSignature.indexOf(_pusherOptions.applicationKey + ':') == 0)
+				pusherEvent.data.auth = pusherChannel.authenticationSignature;
+			else
+				pusherEvent.data.auth = _pusherOptions.applicationKey + ':' + pusherChannel.authenticationSignature;
+
 			
 			// dispatch event to pusher service
 			dispatchPusherEvent(pusherEvent);
