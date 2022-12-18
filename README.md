@@ -1,21 +1,17 @@
-PusherAS
-========
+# PusherAS
+
+Note: **This project is unmaintained and outdated.**
+
+---
 
 Pusher.com ActionScript3 Client Library using the native AS3 event system.
 Developed for real-time Mobile, Desktop, Browser applications.
+http://pusher.com/docs/libraries#community-actionscript
 
-Listed at pusher.com: http://pusher.com/docs/libraries#community-actionscript
-
-###Example Script Demo:
-![alt tag](http://rocketengine.io/download/pusheras_ex_demo.gif)
-
-**Live Demo:** http://rocketengine.io/demos/pusheras
-*Note: Open the browser console to inspect log messages.*
-
-###Usage:
+### Usage:
 To define the pusher connection, create a new ```PusherOptions``` instance.
 The ```PusherOptions``` provides several keys to define the pusher setup, disconnect / interrupt handling.
-To display log messages from the PusherAS, include the  ```LoggerAS``` library from https://github.com/rocketengineio/LoggerAS into your project.
+To display log messages from the PusherAS, include the  ```LoggerAS``` library from https://github.com/TilmanGriesel/LoggerAS into your project.
 ```javascript
 public function PusherASExample()
 {
@@ -95,4 +91,4 @@ Documents
 * [The Pusher Protocol](http://pusher.com/docs/pusher_protocol)
 
 
-Copyright (c) 2014 Tilman Griesel - http://rocketengine.io
+Copyright (c) 2014 Tilman Griesel
